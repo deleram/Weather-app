@@ -1,0 +1,72 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.card {
+  margin: 0 auto;
+  border-color: #53c5be;
+  border-width: 3px;
+  margin-top: 80px;
+  max-width: 500px;
+}
+.search {
+  border-color: #53c5be;
+  border-radius: 10px;
+  display: inline;
+}
+.button {
+  display: inline;
+}
+
+.city {
+  text-transform: capitalize;
+  color: #5a6275;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+h6 {
+  color: #9ca1ab;
+  margin-left: 5px;
+}
+.main_icon {
+  font-size: 100px;
+  color: #fec100;
+  font-weight: light;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.col-3 {
+  margin-top: 20px;
+}
+.main_degree {
+  color: #5a6275;
+  font-size: 50px;
+  font-weight: 500;
+  margin-left: -20px;
+}
+.main_detail {
+  margin-left: -20px;
+  font-size: 12px;
+  margin-left: -5px;
+  color: #9ca1ab;
+}
+
+.next_days {
+  color: #5a6275;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.icon {
+  color: #fec100;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.degree {
+  margin-left: -10px;
+  color: #9ca1ab;
+}
+
+.unit {
+  font-size: 15px;
+}
