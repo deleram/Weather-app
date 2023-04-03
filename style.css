@@ -30,20 +30,23 @@ h6 {
   margin-left: 5px;
 }
 .main_icon {
+  position: relative;
   font-size: 100px;
   color: #fec100;
   font-weight: light;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 .col-3 {
   margin-top: 20px;
 }
 .main_degree {
+  padding: 10px;
   color: #5a6275;
   font-size: 50px;
   font-weight: 500;
   margin-left: -20px;
+  padding-bottom: 0px;
 }
 .main_detail {
   margin-left: -20px;
@@ -61,6 +64,7 @@ h6 {
   color: #fec100;
   font-size: 30px;
   margin-top: 15px;
+  padding-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -70,6 +74,8 @@ h6 {
 }
 
 .unit {
+  position: relative;
+  margin-left: -30px;
   font-size: 15px;
 }
 
