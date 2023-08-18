@@ -82,6 +82,21 @@ function cityEnter(enteredCity) {
   axios.get(url).then(updateData);
 }
 
+function F_degree_change(event) {
+  event.preventDefault();
+  let degreeF = document.querySelector("span.main_degree");
+  degreeF.innerHTML = `${Math.round(C_degree * 1.8 + 32)}°`;
+  F.classList.add("active");
+  C.classList.remove("active");
+}
+function C_degree_change(event) {
+  event.preventDefault();
+  let degreeC = document.querySelector("span.main_degree");
+  degreeC.innerHTML = `${Math.round(C_degree)}°`;
+  C.classList.add("active");
+  F.classList.remove("active");
+}
+
 let C_degree = null;
 
 let city_search = document.querySelector("#city_search");
@@ -90,19 +105,7 @@ city_search.addEventListener("submit", Save_city);
 cityEnter("tehran");
 
 let C = document.querySelector(".centigrad");
-C.addEventListener("click", function (event) {
-  event.preventDefault();
-  let degreeC = document.querySelector("span.main_degree");
-  degreeC.innerHTML = `${Math.round(C_degree)}°`;
-  C.classList.add("active");
-  F.classList.remove("active");
-});
+C.addEventListener("click", C_degree_change);
 
 let F = document.querySelector(".farenheit");
-F.addEventListener("click", function (event) {
-  event.preventDefault();
-  let degreeF = document.querySelector("span.main_degree");
-  degreeF.innerHTML = `${Math.round(C_degree * 1.8 + 32)}°`;
-  F.classList.add("active");
-  C.classList.remove("active");
-});
+F.addEventListener("click", F_degree_change);
